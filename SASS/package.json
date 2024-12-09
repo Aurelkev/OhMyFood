@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet 4 OCR",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Aurelkev/OhMyFood.git"
+  },
+  "author": "Kévin Holleville",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aurelkev/OhMyFood/issues"
+  },
+  "homepage": "https://github.com/Aurelkev/OhMyFood#readme",
+  "dependencies": {
+    "sass": "^1.82.0"
+  }
+}
