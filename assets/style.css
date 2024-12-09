@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    /* Pour mettre les bordures en interne */
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    font-family: "Shrikhand", serif;
+    text-align: center;
+    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
