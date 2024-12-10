@@ -4,7 +4,9 @@
   "description": "Projet 4 OCR",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --version",
+    "sass::watch": "sass --watch scss:css"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,8 @@
   },
   "homepage": "https://github.com/Aurelkev/OhMyFood#readme",
   "dependencies": {
+    "postcss": "^8.4.49",
+    "react": "^19.0.0",
     "sass": "^1.82.0"
   }
 }
