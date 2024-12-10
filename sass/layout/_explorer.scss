@@ -5,8 +5,9 @@
     padding-top: 40px;
     padding-bottom: 40px;
 
-    & h1 {
+    & h2 {
         margin: 0;
+        font-size: 24px;
     }
 
     & p {
@@ -19,7 +20,7 @@
         color: white;
         border: none;
         border-radius: 25px;
-        box-shadow: 0px 8px 19px 4px rgba(0, 0, 0, 0.2);
         background: linear-gradient(to top, #9356DC, #FF79DA);
+        @include base-shadow;
     }
 }

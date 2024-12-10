@@ -49,8 +49,9 @@ header img {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.explorer h1 {
+.explorer h2 {
   margin: 0;
+  font-size: 24px;
 }
 .explorer p {
   font-size: 18px;
@@ -61,8 +62,29 @@ header img {
   color: white;
   border: none;
   border-radius: 25px;
-  box-shadow: 0px 8px 19px 4px rgba(0, 0, 0, 0.2);
   background: linear-gradient(to top, #9356DC, #FF79DA);
+  box-shadow: 0px 8px 19px 4px rgba(0, 0, 0, 0.2);
 }
+
+/* section functioning */
+.functioning ol {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 25px;
+}
+.functioning li {
+  text-align: center;
+  background-color: #f6f6f6;
+  border: 1px solid red;
+  width: auto;
+  margin-right: 20px;
+  border-radius: 20px;
+}
+.functioning i {
+  margin-right: 27px;
+}
+
+/* box-shadow */
 
 /*# sourceMappingURL=style.css.map */
