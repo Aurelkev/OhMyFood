@@ -1,0 +1,25 @@
+.explorer {
+    text-align: center;
+    background-color: #F6F6F6;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    & h1 {
+        margin: 0;
+    }
+
+    & p {
+        font-size: 18px;
+    }
+
+    & button {
+        padding: 13px 18.75px;
+        font-size: 16px;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        box-shadow: 0px 8px 19px 4px rgba(0, 0, 0, 0.2);
+        background: linear-gradient(to top, #9356DC, #FF79DA);
+    }
+}

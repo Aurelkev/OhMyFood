@@ -1,70 +1,8 @@
-* {
-    box-sizing: border-box;
-    /* Pour mettre les bordures en interne */
-}
-
-body {
-    margin: 0;
-    font-family: "Roboto", sans-serif;
-}
-
-/* Header */
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 63px;
-    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    margin: 0;
-    position: relative;
-}
-
-header img {
-    width: 197px;
-    height: auto;
-}
-
-/* main */
-
-main .city {
-    display: flex;
-    background-color: #EAEAEA;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: 50px;
-    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
-
-}
-
-main i {
-    padding-right: 17px;
-}
-
+/* URL et la base (body, etc) */
+@import "./sass/base/base.scss";
+/*header */
+@import "./sass/layout/header.scss";
+/*section city */
+@import "./sass/layout/city.scss";
 /* section explorer */
-
-.explorer {
-    text-align: center;
-    background-color: #F6F6F6;
-    height: auto;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-.explorer h1 {
-    margin: 0;
-}
-
-.explorer p {
-    font-size: 18px;
-}
-
-.explorer button {
-    padding: 13px 18.75px;
-    font-size: 16px;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    box-shadow: 0px 8px 19px 4px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(to top, #9356DC, #FF79DA);
-}
+@import "./sass/layout/explorer.scss";
