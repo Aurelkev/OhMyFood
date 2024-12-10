@@ -163,4 +163,26 @@ header img {
   padding-bottom: 12px;
 }
 
+/* footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+  padding-left: 25px;
+}
+.footer img {
+  height: 27px;
+  width: 137px;
+  filter: invert(1) brightness(2);
+  margin-top: 22px;
+}
+.footer p {
+  margin: 0;
+  color: white;
+  gap: 7px;
+}
+.footer i {
+  padding-right: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
