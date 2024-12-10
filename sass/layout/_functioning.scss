@@ -1,3 +1,5 @@
+@import "../utils/color.scss";
+
 .functioning {
     & h2 {
         margin-left: 10px;
@@ -14,7 +16,7 @@
     & li {
 
         text-align: center;
-        background-color: #f6f6f6;
+        background-color: $background-color;
         @include base-shadow;
         width: auto;
         margin-right: 20px;
@@ -29,7 +31,7 @@
             width: 24px;
             height: 24px;
             transform: translateX(100%);
-            background-color: #9356DC;
+            background-color: $primary-color;
             color: white;
             border-radius: 50%;
             display: flex;
