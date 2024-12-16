@@ -1,8 +1,11 @@
+@use "../utils/color.scss";
+
 .footer {
     display: flex;
     flex-direction: column;
-    background-color: $grey-color;
+    background-color: color.$grey-color;
     padding-left: 25px;
+    padding-bottom: 20px;
     
 
     .footer-text {
@@ -16,7 +19,8 @@
         margin-top: 22px;
     }
 
-    & p {
+    & p, a {
+        display: block;
         margin: 0;
         padding: 5px;
         color: white;

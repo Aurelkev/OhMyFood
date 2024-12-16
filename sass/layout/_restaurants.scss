@@ -2,7 +2,7 @@
 @use "../utils/gradiant.scss";
 
 .restaurant {
-    background-color: $background-color;
+    background-color: color.$background-color;
     padding-top: 50px;
 
     & .restaurant-cards {
@@ -79,7 +79,7 @@
         background-image: gradiant.$gradiant;
         background-clip: text;
         -webkit-background-clip: text;
-        transition: all 250ms;
+        transition: all 250ms ease-in-out;
         opacity: 0;
 
         &:hover {

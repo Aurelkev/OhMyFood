@@ -1,18 +1,20 @@
 /* URL et la base (body, etc) */
-@import "./sass/base/base.scss";
+@use "./sass/base/base.scss";
 /*header */
-@import "./sass/layout/header.scss";
+@use "./sass/layout/header.scss";
 /*section city */
-@import "./sass/layout/city.scss";
+@use "./sass/layout/city.scss";
 /* section explorer */
-@import "./sass/layout/explorer.scss";
+@use "./sass/layout/explorer.scss";
 /* section functioning */
-@import "./sass/layout/functioning.scss";
+@use "./sass/layout/functioning.scss";
 /* box-shadow */
-@import "./sass/utils/box-shadow.scss";
+@use "./sass/utils/box-shadow.scss";
 /*color */
-@import "./sass/utils/color.scss";
+@use "./sass/utils/color.scss";
 /* section restaurant */
-@import "./sass/layout/restaurants.scss";
+@use "./sass/layout/restaurants.scss";
 /* footer */
-@import "./sass/layout/footer.scss"
+@use "./sass/layout/footer.scss";
+/* restaurant pages */
+@use "./sass/pages/restaurant.scss";

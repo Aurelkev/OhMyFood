@@ -194,7 +194,7 @@ header img {
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
-  transition: all 250ms;
+  transition: all 250ms ease-in-out;
   opacity: 0;
 }
 .card-description .fa-solid:hover {
@@ -207,6 +207,7 @@ header img {
   flex-direction: column;
   background-color: #353535;
   padding-left: 25px;
+  padding-bottom: 20px;
 }
 .footer .footer-text {
   padding-top: 16px;
@@ -217,7 +218,8 @@ header img {
   filter: invert(1) brightness(2);
   margin-top: 22px;
 }
-.footer p {
+.footer p, .footer a {
+  display: block;
   margin: 0;
   padding: 5px;
   color: white;
@@ -225,5 +227,7 @@ header img {
 .footer i {
   padding-right: 10px;
 }
+
+/* restaurant pages */
 
 /*# sourceMappingURL=style.css.map */
