@@ -1,0 +1,19 @@
+@use "../components/heart.scss";
+@use "../utils/gradiant.scss";
+
+img {
+    max-width: 100%;
+}
+
+header i {
+    display: flex;
+}
+
+main h2 {
+    font-family: "Shrikhand", serif;
+}
+.name-restaurant{
+    .fa-solid {
+    @include heart.gradient-text(gradiant.$gradiant);
+}
+}

@@ -229,5 +229,28 @@ header img {
 }
 
 /* restaurant pages */
+img {
+  max-width: 100%;
+}
+
+header i {
+  display: flex;
+}
+
+main h2 {
+  font-family: "Shrikhand", serif;
+}
+
+.name-restaurant .fa-solid {
+  color: transparent;
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 250ms ease-in-out;
+  opacity: 0;
+}
+.name-restaurant .fa-solid:hover {
+  opacity: 1;
+}
 
 /*# sourceMappingURL=style.css.map */

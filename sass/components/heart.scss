@@ -1,0 +1,14 @@
+@use "../utils/gradiant.scss";
+
+@mixin gradient-text($gradiant) {
+    color: transparent;
+    background-image: gradiant.$gradiant;
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: all 250ms ease-in-out;
+    opacity: 0;
+
+    &:hover {
+        opacity: 1;
+    }
+}

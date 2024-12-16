@@ -1,5 +1,6 @@
 @use "../utils/color.scss";
 @use "../utils/gradiant.scss";
+@use "../components/heart.scss";
 
 .restaurant {
     background-color: color.$background-color;
@@ -75,17 +76,7 @@
     }
 
     .fa-solid {
-        color: transparent;
-        background-image: gradiant.$gradiant;
-        background-clip: text;
-        -webkit-background-clip: text;
-        transition: all 250ms ease-in-out;
-        opacity: 0;
-
-        &:hover {
-            opacity: 1;
-        }
+        @include heart.gradient-text(gradiant.$gradiant);
     }
-
 
 }
