@@ -134,6 +134,23 @@ header img {
   color: black;
   text-decoration: none;
 }
+.restaurant .restaurant-cards .sticker-new {
+  position: relative;
+}
+.restaurant .restaurant-cards .sticker-new::before {
+  content: "Nouveau";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 29px;
+  width: 80px;
+  background-color: #99E2D0;
+  color: rgb(27.4503816794, 96.5496183206, 79.5114503817);
+  right: 15px;
+  top: 15px;
+  border-radius: 2px;
+}
 .restaurant .card {
   width: auto;
   height: auto;
