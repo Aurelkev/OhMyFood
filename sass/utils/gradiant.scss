@@ -1,0 +1,3 @@
+@use "color.scss";
+
+$gradiant : linear-gradient(to top, color.$primary-color, color.$pink-gradient-color);

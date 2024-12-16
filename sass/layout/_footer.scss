@@ -3,6 +3,11 @@
     flex-direction: column;
     background-color: $grey-color;
     padding-left: 25px;
+    
+
+    .footer-text {
+        padding-top: 16px;
+    }
 
     & img {
         height: 27px;
@@ -13,8 +18,8 @@
 
     & p {
         margin: 0;
+        padding: 5px;
         color: white;
-        gap: 7px;
     }
 
     & i {

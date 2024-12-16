@@ -3,18 +3,12 @@
 .functioning {
     padding: 48px 0;
 
-    & h2 {
-        margin-left: 20px;
-    }
-
     & ol {
         display: flex;
         flex-direction: column;
         gap: 25px;
         list-style: none;
         counter-reset: count;
-
-
     }
 
     & li {

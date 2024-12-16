@@ -1,4 +1,6 @@
+@use "../utils/gradiant.scss";
 @import "../utils/color.scss";
+
 
 .explorer {
     text-align: center;
@@ -23,7 +25,7 @@
         color: white;
         border: none;
         border-radius: 25px;
-        background: linear-gradient(to top, $primary-color, $pink-gradient-color);
+        background: gradiant.$gradiant;
         @include base-shadow;
     }
 }
