@@ -328,10 +328,30 @@ header img {
 .menu-main .heart:hover::after {
   opacity: 1;
 }
+.menu-main button {
+  padding: 13px 18.75px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  transition: filter 0.5s ease-in-out;
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+}
+.menu-main button:hover {
+  filter: brightness(1.1);
+  box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.07);
+}
+
+.order {
+  padding-bottom: 40px;
+  text-align: center;
+}
 
 .list {
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: auto auto;
   gap: 40px;
   padding: 40px 13px 40px 13px;
 }
@@ -374,7 +394,7 @@ header img {
   height: 100%;
   margin-right: -59px;
   width: 59px;
-  transition: margin-right 0.7s ease-in-out;
+  transition: margin-right 0.3s ease-in-out;
 }
 .list__items__check i {
   color: white;

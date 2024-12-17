@@ -2,6 +2,7 @@
 @use "../components/heart.scss";
 @use "../utils/gradient.scss";
 @use "../utils/box-shadow.scss";
+@use "../components/btn.scss";
 
 .restaurant-img {
     width: 100%;
@@ -12,6 +13,7 @@
 .menu-main {
     margin-top: -35px;
     background-color: color.$background-color;
+
 
     h2 {
         display: inline-block;
@@ -27,11 +29,22 @@
     .heart {
         @include heart.animated(40px, 10px);
     }
+
+    & button {
+        @include btn.button;
+        cursor: pointer;
+    }
 }
+
+.order {
+    padding-bottom: 40px;
+    text-align: center;
+}
+
 
 .list {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: auto auto;
     gap: 40px;
     padding: 40px 13px 40px 13px;
 
@@ -83,7 +96,7 @@
             height: 100%;
             margin-right: -$check-width;
             width: $check-width;
-            transition: margin-right 0.7s ease-in-out;
+            transition: margin-right 0.3s ease-in-out;
 
             i {
                 color: white;
@@ -106,4 +119,5 @@
         font-weight: bold;
         margin-left: auto;
     }
+
 }
