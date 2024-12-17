@@ -1,5 +1,5 @@
 @use "../utils/color.scss";
-@use "../utils/gradiant.scss";
+@use "../utils/gradient.scss";
 @use "../components/heart.scss";
 
 .restaurant {
@@ -25,7 +25,6 @@
             height: 29px;
             width: 80px;
             background-color: color.$green-color;
-            color: darken(color.$green-color, 50%);
             right: 15px;
             top: 15px;
             border-radius: 2px;
@@ -49,34 +48,40 @@
                 display: block;
             }
         }
+
+        &__description {
+            padding-left: 13px;
+            background-color: white;
+            position: relative;
+
+            & .card-title {
+                margin: 0;
+                padding-top: 16px;
+                padding-bottom: 5px;
+            }
+
+            & .card-subtitle {
+                margin: 0;
+                padding-bottom: 12px;
+            }
+
+            &::before {
+                @include heart.heart;
+            }
+
+            &::after {
+                @include heart.heart;
+                @include gradient.linearGradient;
+                opacity: 0;
+                color: transparent;
+                font-weight: 900;
+            }
+
+            &:hover::after {
+                opacity: 1;
+            }
+
+
+        }
     }
-}
-
-.card-description {
-    padding-left: 13px;
-    background-color: white;
-    position: relative;
-
-    & .card-title {
-        margin: 0;
-        padding-top: 16px;
-        padding-bottom: 5px;
-    }
-
-    & .card-subtitle {
-        margin: 0;
-        padding-bottom: 12px;
-    }
-
-    & i {
-        font-size: 22px;
-        position: absolute;
-        right: 25px;
-        bottom: 33px;
-    }
-
-    .fa-solid {
-        @include heart.gradient-text(gradiant.$gradiant);
-    }
-
 }

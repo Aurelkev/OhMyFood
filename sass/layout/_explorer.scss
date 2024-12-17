@@ -1,4 +1,4 @@
-@use "../utils/gradiant.scss";
+@use "../utils/gradient.scss";
 @use "../utils/color.scss";
 @use "../utils/box-shadow.scss";
 
@@ -26,7 +26,7 @@
         color: white;
         border: none;
         border-radius: 25px;
-        background: gradiant.$gradiant;
+        @include gradient.linearGradient;
         @include box-shadow.base-shadow;
     }
 }

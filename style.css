@@ -76,7 +76,7 @@ header img {
   color: white;
   border: none;
   border-radius: 25px;
-  background: linear-gradient(to top, #9356DC, #FF79DA);
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
   box-shadow: 0px 8px 19px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -149,7 +149,6 @@ header img {
   height: 29px;
   width: 80px;
   background-color: #99E2D0;
-  color: rgb(27.4503816794, 96.5496183206, 79.5114503817);
   right: 15px;
   top: 15px;
   border-radius: 2px;
@@ -168,36 +167,63 @@ header img {
   object-fit: cover;
   display: block;
 }
-
-.card-description {
+.restaurant .card__description {
   padding-left: 13px;
   background-color: white;
   position: relative;
 }
-.card-description .card-title {
+.restaurant .card__description .card-title {
   margin: 0;
   padding-top: 16px;
   padding-bottom: 5px;
 }
-.card-description .card-subtitle {
+.restaurant .card__description .card-subtitle {
   margin: 0;
   padding-bottom: 12px;
 }
-.card-description i {
+.restaurant .card__description::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 400;
+  content: "\f004";
   font-size: 22px;
   position: absolute;
   right: 25px;
   bottom: 33px;
-}
-.card-description .fa-solid {
-  color: transparent;
-  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  color: inherit;
   background-clip: text;
   -webkit-background-clip: text;
   transition: all 250ms ease-in-out;
-  opacity: 0;
+  opacity: 1;
 }
-.card-description .fa-solid:hover {
+.restaurant .card__description::after {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 400;
+  content: "\f004";
+  font-size: 22px;
+  position: absolute;
+  right: 25px;
+  bottom: 33px;
+  color: inherit;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 250ms ease-in-out;
+  opacity: 1;
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  opacity: 0;
+  color: transparent;
+  font-weight: 900;
+}
+.restaurant .card__description:hover::after {
   opacity: 1;
 }
 
@@ -228,29 +254,75 @@ header img {
   padding-right: 10px;
 }
 
-/* restaurant pages */
-img {
-  max-width: 100%;
+/* menu pages */
+.restaurant__img {
+  width: 100%;
+  height: 35vh;
+  object-fit: cover;
 }
 
-header i {
-  display: flex;
+.menu-main {
+  margin-top: -35px;
 }
-
-main h2 {
-  font-family: "Shrikhand", serif;
+.menu-main h2 {
+  margin: 0;
+  background-color: #F6F6F6;
+  font-family: "Shrikhand", "serif";
+  position: relative;
+  border-radius: 23px 23px 0 0;
+  padding: 30px;
 }
-
-.name-restaurant .fa-solid {
-  color: transparent;
-  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+.menu-main h2::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 400;
+  content: "\f004";
+  font-size: 22px;
+  position: absolute;
+  right: 25px;
+  bottom: 33px;
+  color: inherit;
   background-clip: text;
   -webkit-background-clip: text;
   transition: all 250ms ease-in-out;
-  opacity: 0;
-}
-.name-restaurant .fa-solid:hover {
   opacity: 1;
+}
+.menu-main h2::after {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 400;
+  content: "\f004";
+  font-size: 22px;
+  position: absolute;
+  right: 25px;
+  bottom: 33px;
+  color: inherit;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 250ms ease-in-out;
+  opacity: 1;
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  opacity: 0;
+  color: transparent;
+  font-weight: 900;
+}
+.menu-main h2:hover::after {
+  opacity: 1;
+}
+
+.menu-list {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  padding-left: 13px;
+  gap: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */

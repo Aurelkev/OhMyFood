@@ -1,14 +1,40 @@
-@use "../utils/gradiant.scss";
+@use "../utils/gradient.scss";
 
-@mixin gradient-text($gradiant) {
-    color: transparent;
-    background-image: gradiant.$gradiant;
+@mixin heart {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    content: "\f004";
+    font-size: 22px;
+    position: absolute;
+    right: 25px;
+    bottom: 33px;
+    color: inherit;
     background-clip: text;
     -webkit-background-clip: text;
     transition: all 250ms ease-in-out;
-    opacity: 0;
+    opacity: 1;
+}
 
-    &:hover {
+@mixin animated{
+    position: relative;
+    &::before {
+        @include heart;
+    }
+
+    &::after {
+        @include heart;
+        @include gradient.linearGradient;
+        opacity: 0;
+        color: transparent;
+        font-weight: 900;
+    }
+
+    &:hover::after {
         opacity: 1;
     }
 }
