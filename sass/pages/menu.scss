@@ -14,14 +14,18 @@
     background-color: color.$background-color;
 
     h2 {
+        display: inline-block;
+        width: 100%;
         font-size: 28px;
         margin: 0;
         font-family: "Shrikhand", "serif";
-        @include heart.animated;
         border-radius: 23px 23px 0 0;
         padding: 32px 17px 0 17px;
         background-color: color.$background-color;
+    }
 
+    .heart {
+        @include heart.animated(40px, 10px);
     }
 }
 
@@ -51,9 +55,11 @@
         justify-content: space-between;
         align-items: end;
         background-color: white;
-        padding: 13.5px 0 13.5px 15px;
         border-radius: 15px;
         @include box-shadow.base-shadow;
+        overflow: hidden;
+
+
 
         h4 {
             font-size: 18px;
@@ -64,8 +70,32 @@
             margin: 0;
         }
 
-        &:hover {
-            
+        &__content {
+            flex: 1;
+        }
+
+        &__check {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            $check-width: 59px;
+            background-color: color.$green-color;
+            height: 100%;
+            margin-right: -$check-width;
+            width: $check-width;
+            transition: margin-right 0.7s ease-in-out;
+
+            i {
+                color: white;
+            }
+        }
+
+        &:hover &__check {
+            margin-right: 0;
+        }
+
+        &>*:not(:last-child) {
+            padding: 13.5px 15px 13.5px 15px;
         }
     }
 
@@ -74,5 +104,6 @@
         margin: 0;
         color: color.$grey-color;
         font-weight: bold;
+        margin-left: auto;
     }
 }

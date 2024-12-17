@@ -266,15 +266,19 @@ header img {
   background-color: #F6F6F6;
 }
 .menu-main h2 {
+  display: inline-block;
+  width: 100%;
   font-size: 28px;
   margin: 0;
   font-family: "Shrikhand", "serif";
-  position: relative;
   border-radius: 23px 23px 0 0;
   padding: 32px 17px 0 17px;
   background-color: #F6F6F6;
 }
-.menu-main h2::before {
+.menu-main .heart {
+  position: relative;
+}
+.menu-main .heart::before {
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -285,15 +289,15 @@ header img {
   content: "\f004";
   font-size: 22px;
   position: absolute;
-  right: 25px;
-  bottom: 33px;
+  right: 40px;
+  bottom: 10px;
   color: inherit;
   background-clip: text;
   -webkit-background-clip: text;
   transition: all 250ms ease-in-out;
   opacity: 1;
 }
-.menu-main h2::after {
+.menu-main .heart::after {
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -304,8 +308,8 @@ header img {
   content: "\f004";
   font-size: 22px;
   position: absolute;
-  right: 25px;
-  bottom: 33px;
+  right: 40px;
+  bottom: 10px;
   color: inherit;
   background-clip: text;
   -webkit-background-clip: text;
@@ -316,7 +320,7 @@ header img {
   color: transparent;
   font-weight: 900;
 }
-.menu-main h2:hover::after {
+.menu-main .heart:hover::after {
   opacity: 1;
 }
 
@@ -343,9 +347,9 @@ header img {
   justify-content: space-between;
   align-items: end;
   background-color: white;
-  padding: 13.5px 0 13.5px 15px;
   border-radius: 15px;
   box-shadow: 0px 5px 10.9px rgba(0, 0, 0, 0.015), 0px 11.4px 29px rgba(0, 0, 0, 0.029), 0px 22.4px 60.9px rgba(0, 0, 0, 0.047), 0px 56px 138px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
 }
 .list__items h4 {
   font-size: 18px;
@@ -354,11 +358,34 @@ header img {
 .list__items p {
   margin: 0;
 }
+.list__items__content {
+  flex: 1;
+}
+.list__items__check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  height: 100%;
+  margin-right: -59px;
+  width: 59px;
+  transition: margin-right 0.7s ease-in-out;
+}
+.list__items__check i {
+  color: white;
+}
+.list__items:hover .list__items__check {
+  margin-right: 0;
+}
+.list__items > *:not(:last-child) {
+  padding: 13.5px 15px 13.5px 15px;
+}
 .list__price {
   padding-right: 15px;
   margin: 0;
   color: #353535;
   font-weight: bold;
+  margin-left: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
