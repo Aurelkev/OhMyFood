@@ -1,6 +1,7 @@
 @use "../utils/color.scss";
 @use "../components/heart.scss";
 @use "../utils/gradient.scss";
+@use "../utils/box-shadow.scss";
 
 .restaurant__img {
     width: 100%;
@@ -10,6 +11,7 @@
 
 .menu-main {
     margin-top: -35px;
+    background-color: color.$background-color;
 
     h2 {
         margin: 0;
@@ -25,6 +27,14 @@
 .menu-list {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    padding-left: 13px;
+    padding: 0 13px 0 13px;
     gap: 40px;
 }
+
+.menu__items {
+    background-color: white;
+    padding: 13.5px 0 13.5px 15px;
+    border-radius: 15px;
+    @include box-shadow.base-shadow;
+}
+

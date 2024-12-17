@@ -263,6 +263,7 @@ header img {
 
 .menu-main {
   margin-top: -35px;
+  background-color: #F6F6F6;
 }
 .menu-main h2 {
   margin: 0;
@@ -321,8 +322,15 @@ header img {
 .menu-list {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  padding-left: 13px;
+  padding: 0 13px 0 13px;
   gap: 40px;
+}
+
+.menu__items {
+  background-color: white;
+  padding: 13.5px 0 13.5px 15px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 19px 4px rgba(0, 0, 0, 0.2);
 }
 
 /*# sourceMappingURL=style.css.map */
