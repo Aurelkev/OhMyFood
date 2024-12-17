@@ -76,8 +76,13 @@ header img {
   color: white;
   border: none;
   border-radius: 25px;
+  transition: filter 0.5s ease-in-out;
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
-  box-shadow: 0px 5px 10.9px rgba(0, 0, 0, 0.015), 0px 11.4px 29px rgba(0, 0, 0, 0.029), 0px 22.4px 60.9px rgba(0, 0, 0, 0.047), 0px 56px 138px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.07);
+}
+.explorer button:hover {
+  filter: brightness(1.1);
+  box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.07);
 }
 
 /* section functioning */
@@ -94,7 +99,7 @@ header img {
 .functioning li {
   text-align: center;
   background-color: #F6F6F6;
-  box-shadow: 0px 5px 10.9px rgba(0, 0, 0, 0.015), 0px 11.4px 29px rgba(0, 0, 0, 0.029), 0px 22.4px 60.9px rgba(0, 0, 0, 0.047), 0px 56px 138px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.07);
   width: auto;
   margin-right: 20px;
   border-radius: 20px;
@@ -181,7 +186,7 @@ header img {
   margin: 0;
   padding-bottom: 12px;
 }
-.restaurant .card__description::before {
+.restaurant .card__description .heart::before {
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -200,7 +205,7 @@ header img {
   transition: all 250ms ease-in-out;
   opacity: 1;
 }
-.restaurant .card__description::after {
+.restaurant .card__description .heart::after {
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -223,7 +228,7 @@ header img {
   color: transparent;
   font-weight: 900;
 }
-.restaurant .card__description:hover::after {
+.restaurant .card__description .heart:hover::after {
   opacity: 1;
 }
 
@@ -348,7 +353,7 @@ header img {
   align-items: end;
   background-color: white;
   border-radius: 15px;
-  box-shadow: 0px 5px 10.9px rgba(0, 0, 0, 0.015), 0px 11.4px 29px rgba(0, 0, 0, 0.029), 0px 22.4px 60.9px rgba(0, 0, 0, 0.047), 0px 56px 138px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.07);
   overflow: hidden;
 }
 .list__items h4 {

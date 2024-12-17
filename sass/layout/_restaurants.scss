@@ -65,23 +65,24 @@
                 padding-bottom: 12px;
             }
 
-            &::before {
-                @include heart.heart;
+            & .heart {
+                &::before {
+                    @include heart.heart;
+                }
+
+                &::after {
+                    @include heart.heart;
+                    @include gradient.linearGradient;
+                    opacity: 0;
+                    color: transparent;
+                    font-weight: 900;
+                }
+
+                &:hover::after {
+                    opacity: 1;
+                }
+
             }
-
-            &::after {
-                @include heart.heart;
-                @include gradient.linearGradient;
-                opacity: 0;
-                color: transparent;
-                font-weight: 900;
-            }
-
-            &:hover::after {
-                opacity: 1;
-            }
-
-
         }
     }
 }
