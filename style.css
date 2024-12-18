@@ -274,7 +274,7 @@ header img {
   content: "\f060";
   font-size: 22px;
   position: absolute;
-  right: 400px;
+  left: 20px;
   bottom: 20px;
   opacity: 1;
 }

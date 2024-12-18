@@ -7,7 +7,7 @@
 
 .arrow {
     &::before {
-        @include arrow.arrow(400px,20px);
+        @include arrow.arrow;
     }
 }
 
