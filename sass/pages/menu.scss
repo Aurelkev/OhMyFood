@@ -60,7 +60,18 @@
 
         h3 {
             margin: 0;
+            font-weight: 300;
             font-size: 16px;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 27px;
+                left: 0;
+                height: 3px;
+                width: 40px;
+                background-color: color.$green-color;
+            }
         }
     }
 
@@ -73,18 +84,18 @@
         @include box-shadow.base-shadow;
         overflow: hidden;
 
-        
         &__content {
             flex: 1;
             overflow: hidden;
             white-space: nowrap;
+
             h4 {
                 font-size: 18px;
                 margin: 0;
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
-    
+
             p {
                 margin: 0;
                 overflow: hidden;
