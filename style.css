@@ -359,6 +359,7 @@ header img {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  overflow: hidden;
 }
 .list__category .list__items:last-child {
   box-shadow: none;
@@ -376,15 +377,21 @@ header img {
   box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.07);
   overflow: hidden;
 }
-.list__items h4 {
-  font-size: 18px;
-  margin: 0;
-}
-.list__items p {
-  margin: 0;
-}
 .list__items__content {
   flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.list__items__content h4 {
+  font-size: 18px;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.list__items__content p {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .list__items__check {
   display: flex;
