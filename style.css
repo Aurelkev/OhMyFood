@@ -1,4 +1,5 @@
-/* URL et la base (body, etc) */
+/* BASE */
+/* base */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
 * {
@@ -24,6 +25,11 @@ i {
   font-size: 20px;
 }
 
+/* COMPONENTS */
+/* arrow */
+/* btn */
+/* heart */
+/* LAYOUT */
 /*header */
 header {
   display: flex;
@@ -55,6 +61,7 @@ header img {
 }
 
 /* section explorer */
+/* btn */
 .explorer {
   text-align: center;
   background-color: #F6F6F6;
@@ -129,9 +136,8 @@ header img {
   color: #7E7E7E;
 }
 
-/* box-shadow */
-/*color */
 /* section restaurant */
+/* heart */
 .restaurant {
   background-color: #F6F6F6;
   padding-top: 50px;
@@ -259,7 +265,12 @@ header img {
   padding-right: 10px;
 }
 
+/* pages */
 /* menu pages */
+/* heart */
+/* btn */
+/* COMPONENTS */
+/* arrow */
 .arrow::before {
   display: inline-block;
   font-style: normal;
@@ -450,5 +461,11 @@ header img {
   font-weight: bold;
   margin-left: auto;
 }
+
+/* UTILS */
+/* box-shadow */
+/*color */
+/* font-awesome */
+/* gradient */
 
 /*# sourceMappingURL=style.css.map */
