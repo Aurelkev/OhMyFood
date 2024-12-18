@@ -4,10 +4,10 @@ Enhance the interface of a mobile-first site with CSS animations.
 ## Description 
 Develop a “mobile-first” site that lists gourmet restaurant menus.
 ## Installation
-Clonez ce dépôt :
-   git clone https://github.com/Aurelkev/OhMyFood.git
-Install Dependencies :   
-   npm install
+Clonez ce dépôt :  
+   git clone https://github.com/Aurelkev/OhMyFood.git  
+Install Dependencies :     
+   npm install  
 ## Utilisation
 Pour lancer la compilation, exécutez :
    npm run sass
