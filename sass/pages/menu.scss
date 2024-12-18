@@ -4,6 +4,7 @@
 @use "../utils/box-shadow.scss";
 @use "../components/btn.scss";
 @use "../components/arrow.scss";
+@use "../utils/effect.scss";
 
 .arrow {
     &::before {
@@ -67,6 +68,7 @@
 
         h3 {
             margin: 0;
+            margin-bottom: 20px;
             font-weight: 300;
             font-size: 16px;
             position: relative;
@@ -89,9 +91,13 @@
         align-items: end;
         background-color: white;
         border-radius: 15px;
-        @include box-shadow.base-shadow;
         overflow: hidden;
         cursor: pointer;
+        @include box-shadow.base-shadow;
+        @include effect.delay-appear;
+        animation: appear 1s;
+        animation-fill-mode: both;
+
 
         &__content {
             flex: 1;

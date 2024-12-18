@@ -11,6 +11,13 @@
         grid-template-rows: repeat(4, 1fr);
         gap: 18px;
         padding: 17px;
+        @media (min-width: 768px){
+            padding: 28px 10% 20px 10%;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: space-around;
+            gap:4vw;
+        }
 
         .sticker-new {
             position: relative;
