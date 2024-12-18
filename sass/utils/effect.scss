@@ -17,3 +17,23 @@
         }       
     }
 }
+
+@keyframes disappear {
+    0% {
+        transform: rotate (0) scale(1);
+    }
+
+    100% {
+        transform: rotate(3turn) scale(0);
+
+    }
+}
+
+@keyframes fillText {
+    0% {
+      clip-path: inset(0 100% 0 0); 
+    }
+    100% {
+      clip-path: inset(0 0 0 0); 
+    }
+  }
