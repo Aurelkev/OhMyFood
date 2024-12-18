@@ -1,21 +1,14 @@
 @use "../utils/gradient.scss";
+@use "../utils/font-awesome.scss";
 
 @mixin heart ($right: 25px, $bottom: 33px) {
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    font-family: "Font Awesome 6 Free";
+    @include font-awesome.font-awesome;
     font-weight: 400;
     content: "\f004";
     font-size: 22px;
     position: absolute;
     right: $right;
     bottom: $bottom;
-    color: inherit;
-    background-clip: text;
-    -webkit-background-clip: text;
     transition: all 250ms ease-in-out;
     opacity: 1;
 }

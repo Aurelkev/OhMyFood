@@ -3,6 +3,13 @@
 @use "../utils/gradient.scss";
 @use "../utils/box-shadow.scss";
 @use "../components/btn.scss";
+@use "../components/arrow.scss";
+
+.arrow {
+    &::before {
+        @include arrow.arrow(400px,20px);
+    }
+}
 
 .restaurant-img {
     width: 100%;
@@ -63,6 +70,7 @@
             font-weight: 300;
             font-size: 16px;
             position: relative;
+
             &::after {
                 content: "";
                 position: absolute;
@@ -83,6 +91,7 @@
         border-radius: 15px;
         @include box-shadow.base-shadow;
         overflow: hidden;
+        cursor: pointer;
 
         &__content {
             flex: 1;
