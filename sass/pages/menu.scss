@@ -5,6 +5,7 @@
 @use "../components/btn.scss";
 @use "../components/arrow.scss";
 @use "../utils/effect.scss";
+@use "../utils/breakpoint.scss";
 
 .arrow {
     &::before {
@@ -22,6 +23,14 @@
     margin-top: -35px;
     background-color: color.$background-color;
 
+    @media (min-width: breakpoint.$medium-screen) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        transform: translateX(15%);
+        border-radius: 23px 23px 0 0;
+    }
 
     h2 {
         display: inline-block;
@@ -32,10 +41,17 @@
         border-radius: 23px 23px 0 0;
         padding: 32px 17px 0 17px;
         background-color: color.$background-color;
+
+        @media (min-width: breakpoint.$medium-screen) {
+            width: auto;
+        }
     }
 
     .heart {
         @include heart.animated(40px, 10px);
+        @media (min-width: breakpoint.$medium-screen) {
+            @include heart.animated(-200px, 10px);
+        }
     }
 
     & button {
@@ -52,6 +68,7 @@
 
 .list {
     display: grid;
+    justify-content: center;
     grid-template-rows: auto auto;
     gap: 40px;
     padding: 40px 13px 40px 13px;
@@ -61,6 +78,11 @@
         flex-direction: column;
         gap: 15px;
         overflow: hidden;
+
+        @media (min-width: breakpoint.$medium-screen) {
+            width: 50vw;
+        }
+
 
         & .list__items:last-child {
             box-shadow: none;

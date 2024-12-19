@@ -1,5 +1,6 @@
 @use "../utils/color.scss";
 @use "../utils/box-shadow.scss";
+@use "../utils/breakpoint.scss";
 
 .functioning {
     padding: 48px 0;
@@ -10,29 +11,32 @@
         gap: 25px;
         list-style: none;
         counter-reset: count;
-        @media (min-width: 768px){ 
+        @media (min-width: breakpoint.$medium-screen){ 
             flex-direction: row;
         }
     }
 
     & li {
-
+        position: relative;
         text-align: center;
         background-color: color.$background-color;
         @include box-shadow.base-shadow;
         width: auto;
         margin-right: 20px;
         border-radius: 20px;
-        padding: 26px;
+        padding: 1em;
+        @media (min-width: breakpoint.$medium-screen) {
+            flex-grow: 1;
+        }
+        
 
         &::before {
             content: counter(count);
             counter-increment: count;
             position: absolute;
-            left: 0;
+            left: -12px;
             width: 24px;
             height: 24px;
-            transform: translateX(100%);
             background-color: color.$primary-color;
             color: white;
             border-radius: 50%;
