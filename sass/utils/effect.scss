@@ -14,7 +14,7 @@
     @for $i from 2 through 5 {
         &:nth-child(#{$i}) {
             animation-delay: 150ms * $i;
-        }       
+        }
     }
 }
 
@@ -31,9 +31,22 @@
 
 @keyframes fillText {
     0% {
-      clip-path: inset(0 100% 0 0); 
+        clip-path: inset(0 100% 0 0);
     }
+
+    20% {
+        clip-path: inset(0 80% 0 0);
+    }
+
+    30% {
+        clip-path: inset(0 70% 0 0);
+    }
+
+    70% {
+        clip-path: inset(0 20% 0 0);
+    }
+
     100% {
-      clip-path: inset(0 0 0 0); 
+        clip-path: inset(0 0 0 0);
     }
-  }
+}

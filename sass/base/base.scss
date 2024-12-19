@@ -29,7 +29,7 @@
         font-size: clamp(30px, 9vw, 100px);
         font-weight: bold;
         color: color.$primary-color;
-        -webkit-text-stroke: 1px color.$grey-color;
+        -webkit-text-stroke: 1px black;
         animation: fillText 2s forwards;
         overflow: hidden;
 
