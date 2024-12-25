@@ -17,6 +17,8 @@ Install Dependencies :
 ```   
 ## Utilisation
 Pour lancer la compilation, exécutez :
+``` bash
    npm run sass
+```
 ## Crédits
 Créé par Kévin Holleville
