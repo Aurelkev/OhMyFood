@@ -8,6 +8,7 @@ Develop a “mobile-first” site that lists gourmet restaurant menus.
  - [npm](https://www.npmjs.com/)  
 ## Installation
 Clone this repository :  
+```bash
    git clone https://github.com/Aurelkev/OhMyFood.git 
    
 Install Dependencies :     
