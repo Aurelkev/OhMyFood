@@ -128,7 +128,7 @@ header img {
   list-style: none;
   counter-reset: count;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .functioning ol {
     flex-direction: row;
   }
@@ -141,7 +141,7 @@ header img {
   width: auto;
   margin-right: 20px;
   border-radius: 20px;
-  padding: 1em;
+  padding: 1.5rem 0 1.5rem 0;
 }
 @media (min-width: 768px) {
   .functioning li {

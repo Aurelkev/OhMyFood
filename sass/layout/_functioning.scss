@@ -11,7 +11,7 @@
         gap: 25px;
         list-style: none;
         counter-reset: count;
-        @media (min-width: breakpoint.$medium-screen){ 
+        @media (min-width: breakpoint.$large-screen){ 
             flex-direction: row;
         }
     }
@@ -24,9 +24,9 @@
         width: auto;
         margin-right: 20px;
         border-radius: 20px;
-        padding: 1em;
+        padding: 1.5rem 0 1.5rem 0;
         @media (min-width: breakpoint.$medium-screen) {
-            flex-grow: 1;
+            flex-grow: 1; 
         }
         
 

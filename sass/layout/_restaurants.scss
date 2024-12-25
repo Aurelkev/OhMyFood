@@ -1,7 +1,7 @@
 @use "../utils/color.scss";
 @use "../utils/gradient.scss";
 @use "../components/heart.scss";
-
+@use "../utils/breakpoint.scss";
 .restaurant {
     background-color: color.$background-color;
     padding-top: 50px;
@@ -11,7 +11,7 @@
         grid-template-rows: repeat(4, 1fr);
         gap: 18px;
         padding: 17px;
-        @media (min-width: 768px){
+        @media (min-width: breakpoint.$medium-screen){
             padding: 28px 10% 20px 10%;
             grid-template-rows: repeat(2, 1fr);
             grid-template-columns: repeat(2, 1fr);
