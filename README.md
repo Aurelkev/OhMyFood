@@ -10,10 +10,11 @@ Develop a “mobile-first” site that lists gourmet restaurant menus.
 Clone this repository :  
 ```bash
    git clone https://github.com/Aurelkev/OhMyFood.git 
-   
-Install Dependencies :     
+```   
+Install Dependencies :
+```bash
    npm install  
-   
+```   
 ## Utilisation
 Pour lancer la compilation, exécutez :
    npm run sass
