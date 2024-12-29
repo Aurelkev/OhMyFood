@@ -123,7 +123,7 @@ header img {
 }
 @media (min-width: 768px) {
   .functioning {
-    padding: 5vh 10vw;
+    padding: 4vh 5vw;
   }
 }
 .functioning ol {
@@ -185,7 +185,7 @@ header img {
 }
 @media (min-width: 768px) {
   .restaurant {
-    padding: 5vh 10vw;
+    padding: 4vh 5vw;
   }
 }
 .restaurant .restaurant-cards {
