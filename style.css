@@ -83,6 +83,18 @@ header img {
 .city i {
   padding-right: 17px;
 }
+.city .search-input {
+  border: none;
+  outline: none;
+  background-color: #EAEAEA;
+  font-size: 16px;
+  color: black;
+  min-width: 50px;
+  max-width: 10%;
+}
+.city .search-input::placeholder {
+  color: black;
+}
 
 /* section explorer */
 /* btn */
