@@ -13,7 +13,7 @@ Clone this repository :
 ```   
 Install Dependencies :
 ```bash
-   npm install  
+   npm install sass
 ```   
 ## Utilisation
 Pour lancer la compilation, exécutez :
