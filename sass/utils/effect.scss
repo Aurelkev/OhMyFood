@@ -35,14 +35,26 @@
     }
 
     20% {
-        clip-path: inset(0 80% 0 0);
+        clip-path: inset(0 90% 0 0);
     }
 
     30% {
-        clip-path: inset(0 70% 0 0);
+        clip-path: inset(0 80% 0 0);
+    }
+
+    50% {
+        clip-path: inset(0 50% 0 0);
+    }
+
+    60% {
+        clip-path: inset(0 40% 0 0);
     }
 
     70% {
+        clip-path: inset(0 20% 0 0);
+    }
+
+    90% {
         clip-path: inset(0 20% 0 0);
     }
 

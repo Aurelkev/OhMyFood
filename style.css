@@ -76,21 +76,20 @@ header img {
   background-color: #EAEAEA;
   justify-content: center;
   align-items: center;
-  width: auto;
   height: 50px;
   box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.city i {
-  padding-right: 17px;
+.city__search {
+  margin-left: 70px;
 }
 .city .search-input {
+  padding-left: 15px;
+  width: auto;
   border: none;
   outline: none;
   background-color: #EAEAEA;
   font-size: 16px;
   color: black;
-  min-width: 50px;
-  max-width: 10%;
 }
 .city .search-input::placeholder {
   color: black;
@@ -384,12 +383,21 @@ header img {
     clip-path: inset(0 100% 0 0);
   }
   20% {
-    clip-path: inset(0 80% 0 0);
+    clip-path: inset(0 90% 0 0);
   }
   30% {
-    clip-path: inset(0 70% 0 0);
+    clip-path: inset(0 80% 0 0);
+  }
+  50% {
+    clip-path: inset(0 50% 0 0);
+  }
+  60% {
+    clip-path: inset(0 40% 0 0);
   }
   70% {
+    clip-path: inset(0 20% 0 0);
+  }
+  90% {
     clip-path: inset(0 20% 0 0);
   }
   100% {
